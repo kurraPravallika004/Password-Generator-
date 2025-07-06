@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transform: rotateY(0deg);
+  transition: transform 0.6s;
+  color: #fff;
+}
+
+.card:hover {
+  transform: rotateY(10deg);
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #00c3ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0077aa;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  word-break: break-word;
+}
